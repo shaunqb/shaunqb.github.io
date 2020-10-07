@@ -1,9 +1,10 @@
 /* -------------------------------------- *
 General Styles
 * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
   background-color: rgb(252, 59, 11);
 }
@@ -11,7 +12,7 @@ h1,
 h2,
 h3 {
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: #ffffff;
   margin-top: 36px;
   margin-bottom: 20px;
@@ -23,7 +24,11 @@ nav div {
   margin: auto;
 }
 header {
-  padding: 40px 0;
+  background-image: url("../images/Banners/PumpkinBanner.jpg");
+  background-size: cover;
+  height: 250px;
+  background-position: 50% 50%;
+  padding: 40px;
 }
 nav a {
   padding-right: 20px;
@@ -37,4 +42,12 @@ nav {
 }
 ol a:hover {
   color: #ffffff;
+}
+
+.inspiro-img {
+  width: 400px;
+}
+
+.thumbnail-img {
+  width: 40px;
 }
