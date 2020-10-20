@@ -11,6 +11,16 @@ body {
   font-size: 20px;
   background-color: rgb(252, 59, 11);
 }
+.container {
+  border: 5px solid #000000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container > div {
+  flex: 1 1 100%;
+}
+
 h1,
 h2,
 h3 {
