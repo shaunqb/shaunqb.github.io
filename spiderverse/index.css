@@ -2,15 +2,13 @@
 font-weight: 200;
 font-style: normal; */
 
-@font-face {
-    font-family: "Digory Doodles";
-    src: url("fonts/Digory_Doodles_PS.ttf") format("truetype"); /* Safari, Android, iOS */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
   h1 {
-    font-family: "Digory Doodles";
+    font-family: "Kalam", cursive;
   }
   body {
-    font-family: "Digory Doodles", cursive;
+    font-family: "Kalam", cursive;
     margin: 0;
     font-size: 12px;
   }
@@ -47,21 +45,26 @@ font-style: normal; */
   .bottom-label {
     position: absolute;
     bottom: 20px;
-    left: 10px;
+    left: 25px;
     max-width: 280px;
+    font-weight: 700;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
+
   .top-label {
     position: absolute;
     top: 20px;
     left: 10px;
     max-width: 280px;
+    font-weight: 700;
   }
   
   .yellow-box {
     background-color: #FFFC80;
     border: 1px solid #000;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     width: 75%;
     margin-left: auto;
@@ -73,7 +76,7 @@ font-style: normal; */
     margin-right: auto;
     background-color: #FFFC80;
     border: 1px solid #000;
-    font-size: 24px;
+    font-size: 30px;
     width: 45%;
     text-align: center;
   }
