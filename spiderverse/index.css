@@ -6,12 +6,20 @@ font-style: normal; */
 
   h1 {
     font-family: "Kalam", cursive;
+    font-size: 36px;
   }
+  
+  h2{
+    font-family: "Kalam", cursive;
+    font-size: 24px;
+  }
+  
   body {
     font-family: "Kalam", cursive;
     margin: 0;
-    font-size: 12px;
+    font-size: 16px;
   }
+  
   main {
     width: 70%;
     margin: auto;
@@ -48,8 +56,6 @@ font-style: normal; */
     left: 25px;
     max-width: 280px;
     font-weight: 700;
-    padding-top: 3px;
-    padding-bottom: 3px;
   }
 
   .top-label {
@@ -72,15 +78,32 @@ font-style: normal; */
   }
 
   .yellow-titlebox {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
     background-color: #FFFC80;
     border: 1px solid #000;
-    font-size: 30px;
-    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
+  .yellow-label-box {
+    justify-content: center;
+    background-color: #FFF200;
+    border: 1px solid #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 55%;
+    margin: 0;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 3px;
+  }
+
 .container {
     display: flex;
     justify-content: space-around;
