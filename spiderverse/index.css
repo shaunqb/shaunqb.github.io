@@ -49,18 +49,54 @@ font-style: normal; */
   .thumb {
     position: relative;
   }
+
+  .thumb-peter {
+    position: relative;
+  }
   
   .bottom-label {
     position: absolute;
     bottom: 20px;
-    left: 25px;
+    left: 10px;
     max-width: 280px;
     font-weight: 700;
   }
 
   .top-label {
     position: absolute;
-    top: 20px;
+    top: 10px;
+    left: 10px;
+    max-width: 280px;
+    font-weight: 700;
+  }
+
+  .peter-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 280px;
+    font-weight: 700;
+  }
+
+  .miles-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 280px;
+    font-weight: 700;
+  }
+
+  .gwen-label {
+    position: absolute;
+    bottom: 120px;
+    left: 10px;
+    max-width: 280px;
+    font-weight: 700;
+  }
+
+  .eddie-label {
+    position: absolute;
+    top: 10px;
     left: 10px;
     max-width: 280px;
     font-weight: 700;
