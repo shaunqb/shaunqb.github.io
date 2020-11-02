@@ -30,6 +30,7 @@ font-style: normal; */
   .row-1,
   .row-2 {
     display: flex;
+    align-items: flex-end;
   }
   .row-2 div {
     flex: 1;
@@ -84,7 +85,7 @@ font-style: normal; */
 
   .gwen-label {
     position: absolute;
-    bottom: 120px;
+    bottom: 20px;
     left: 10px;
     max-width: 280px;
     font-weight: 700;
