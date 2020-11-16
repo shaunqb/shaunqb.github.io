@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <link rel="stylesheet" href="stylemobile.css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <img src="images/tangierlogo.png" alt="Tangier Logo" class="logo">
+    <br />
+    <nav class="container">
+        <div><a href="indexmobile.html" alt="Home" class="button">Home</a></div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="menu1mobile.html" alt="Menu" >Menu1</a>
+                <a href="menu2mobile.html" alt="Menu2" >Menu2</a>
+                <a href="menu3mobile.html" alt="Menu3" >Menu3</a>
+                <a href="menu4mobile.html" alt="Menu4" >Menu4</a>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+    </nav>
+    <br />
+    <div class="content black-box">
+        <p>ATTENTION!</p>
+        <p>Currently only open for takeout due to the Coronavirus crisis</p>
+        <p>To Order - call (503) 459-4441</p>
+    </div>
+    <br />
+    <div class="content black-box">
+        <p>WELCOME!</p>
+        <p>A warm and welcoming family restaurant located in downtown Portland near the water front, noted for serving the finest, most traditional Moroccan & Mediterranean food available. Our casually elegant atmosphere and exquisite cuisine will enhance any dining or celebration experience.</p>
+    </div>
+    <br />
+    <div class="content res-box">
+        <form action="https://shaunqb.github.io/tangier/indexmobile.html">
+            <p style="text-align:center">RESERVATIONS</p>
+            <label for="date">DATE</label>
+            <input type="date" id="date" value="DATE" />
+            <br />
+            <label for="time">TIME</label>
+            <select name="time" id="time" value="TIME">
+                <option value="11:00">11:00 AM
+                <option value="11:15">11:15 AM
+                <option value="11:30">11:30 AM
+                <option value="11:45">11:45 AM
+                <option value="12:00">12:00 PM
+                <option value="12:15">12:15 PM
+                <option value="12:30">12:30 PM
+                <option value="12:45">12:45 PM
+                <option value="1:00">1:00 PM
+                <option value="1:15">1:15 PM
+                <option value="1:30">1:30 PM
+                <option value="1:45">1:45 PM
+                <option value="2:00">2:00 PM
+                <option value="2:15">2:15 PM
+                <option value="2:30">2:30 PM
+                <option value="2:45">2:45 PM
+                <option value="3:00">3:00 PM
+                <option value="3:15">3:15 PM
+                <option value="3:30">3:30 PM
+                <option value="3:45">3:45 PM
+                <option value="4:00">4:00 PM
+                <option value="4:15">4:15 PM
+                <option value="4:30">4:30 PM
+                <option value="4:45">4:45 PM
+                <option value="5:00">5:00 PM
+                <option value="5:15">5:15 PM
+                <option value="5:30">5:30 PM
+                <option value="5:45">5:45 PM
+                <option value="6:00">6:00 PM
+                <option value="6:15">6:15 PM
+                <option value="6:30">6:30 PM
+                <option value="6:45">6:45 PM
+                <option value="7:00">7:00 PM
+                <option value="7:15">7:15 PM
+                <option value="7:30">7:30 PM
+                <option value="7:45">7:45 PM
+                <option value="8:00">8:00 PM
+                <option value="8:15">8:15 PM
+                <option value="8:30">8:30 PM
+                <option value="8:45">8:45 PM
+                <option value="9:00">9:00 PM
+                <option value="9:15">9:15 PM
+                <option value="9:30">9:30 PM
+            </select>
+            <br />
+            <label for="partysize">PARTY SIZE</label>
+            <select name="partsize" value="PARTY SIZE">
+                <option value="1">1
+                <option value="2">2
+                <option value="3">3
+                <option value="4">4
+                <option value="5">5
+                <option value="6">6
+            </select>
+            <p style="text-align:center"><input type="submit" name="BOOK NOW"
+                value="BOOK NOW" /></p>
+        </form>
+    </div>
+    <br />
+    <div class="content clear-box">
+        221 SW Pine St
+        Portland, OR 97204
+        
+        <strong>MON-FRI</strong>
+        11 AM - 9PM
+        
+        <strong>SAT</strong>
+        11 AM - 10PM
+
+        <strong>SUN</strong>
+        12 PM - 9PM
+
+        <a href="https://www.facebook.com/Tangier-Restaurant-573511186078434/" target="_blank"><img src="images/facebook.png" width="30px" alt="Facebook"></a> <a href="https://foursquare.com/v/tangier-moroccan--mediterranean-restaurant/4bb1380ff964a5207e843ce3" target="_blank"><img src="images/foursquare.png" width="30px" alt="Foursquare"></a>
+
+        © 2020 Tangier
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Menu 3</title>
+    <link rel="stylesheet" href="stylemobile.css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <img src="images/tangierlogo.png" alt="Tangier Logo" class="logo">
+    <br />
+    <nav class="container">
+        <div><a href="indexmobile.html" alt="Home" class="button">Home</a></div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="menu1mobile.html" alt="Menu" >Menu1</a>
+                <a href="menu2mobile.html" alt="Menu2" >Menu2</a>
+                <a href="menu3mobile.html" alt="Menu3" >Menu3</a>
+                <a href="menu4mobile.html" alt="Menu4" >Menu4</a>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+    </nav>
+    
+</body>
+</html>
