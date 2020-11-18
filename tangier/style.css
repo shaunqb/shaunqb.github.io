@@ -154,3 +154,14 @@ body {
     text-align: center;
     margin: 0 auto;
   }
+
+  @media only screen and (min-width: 1050px){
+    /* For desktops: */
+    .logo {
+      position:fixed; 
+	    top:0; 
+      left:0;
+      margin-top: 0;
+    }
+    
+  }
