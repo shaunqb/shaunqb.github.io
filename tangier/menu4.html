@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Menu 4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <img src="images/tangierlogo.png" alt="Tangier Logo" class="logo">
+    <br />
+    <nav class="container">
+        <div><a href="index.html" alt="Home" class="button">Home</a></div>
+        <div><a href="gallery.html" alt="Gallery" class="button">Gallery</a></div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="menu1.html" alt="Menu" >Appetizers, Soups, Salads, Sandwiches, and Mezza</a>
+              <a href="menu2.html" alt="Menu2" >Calzones, Pizzas, and Kababs</a>
+              <a href="menu3.html" alt="Menu3" >Specialty Dishes</a>
+              <a href="menu4.html" alt="Menu4" >Specialty Drinks and Desserts</a>
+            </div>
+            <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+    </nav>
+    <br />
+    <div class="content clear-box">
+    221 SW Pine St
+    Portland, OR 97204
+        
+    <strong>MON - FRI</strong>
+    11 AM - 9PM
+        
+    <strong>SAT</strong>
+    11 AM - 10PM
+
+    <strong>SUN</strong>
+    12 PM - 9PM
+
+    <a href="https://www.facebook.com/Tangier-Restaurant-573511186078434/" target="_blank"><img src="images/facebook.png" width="30px" alt="Facebook"></a> <a href="https://foursquare.com/v/tangier-moroccan--mediterranean-restaurant/4bb1380ff964a5207e843ce3" target="_blank"><img src="images/foursquare.png" width="30px" alt="Foursquare"></a>
+
+    © 2020 Tangier
+    </div>
+</body>
+</html>

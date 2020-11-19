@@ -19,7 +19,6 @@ body {
 }
 
 .button {
-    display: flex;
     background-color: #000000;
     border: none;
     color: white;
@@ -38,7 +37,6 @@ body {
 
  /* Dropdown Button */
 .dropbtn {
-    display: flex;
     background-color: #000000;
     border: none;
     color: white;
@@ -162,6 +160,5 @@ body {
 	    top:0; 
       left:0;
       margin-top: 0;
-    }
-    
+    } 
   }
