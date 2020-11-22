@@ -9,7 +9,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <img src="images/tangierlogo.png" alt="Tangier Logo" class="logo">
+  <a href="index.html" alt="Home"><img src="images/tangierlogo.png" alt="Tangier Logo" class="logo"></a>
     <br />
     <nav class="container">
         <div><a href="index.html" alt="Home" class="button">Home</a></div>
@@ -46,6 +46,137 @@
                 </script>
     </nav>
     <br />
+<!-- Container for the image gallery -->
+<div class="image-container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 10</div>
+      <img src="images/dish1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 10</div>
+      <img src="images/dish2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+      <img src="images/dish3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/dish4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 10</div>
+      <img src="images/dish5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 10</div>
+      <img src="images/dish6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 10</div>
+      <img src="images/dish7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 10</div>
+      <img src="images/dish8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 10</div>
+      <img src="images/dish9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+      <img src="images/dish10.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/dish1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Dish 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dish 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Dish 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Dish 4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Dish 5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Dish 6">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Dish 7">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Dish 8">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Dish 9">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/dish10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Dish 10">
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+  
+</div>
     <div class="content clear-box">
     221 SW Pine St
     Portland, OR 97204
@@ -59,7 +190,7 @@
     <strong>SUN</strong>
     12 PM - 9PM
 
-    <a href="https://www.facebook.com/Tangier-Restaurant-573511186078434/" target="_blank"><img src="images/facebook.png" width="30px" alt="Facebook"></a> <a href="https://foursquare.com/v/tangier-moroccan--mediterranean-restaurant/4bb1380ff964a5207e843ce3" target="_blank"><img src="images/foursquare.png" width="30px" alt="Foursquare"></a>
+    <a href="https://www.facebook.com/Tangier-Restaurant-573511186078434/" target="_blank"><img src="images/facebook.png" height="30px" alt="Facebook"></a> <a href="https://foursquare.com/v/tangier-moroccan--mediterranean-restaurant/4bb1380ff964a5207e843ce3" target="_blank"><img src="images/foursquare.png" height="30px" alt="Foursquare"></a> <a href="https://www.yelp.com/biz/tangier-moroccan-and-mediterranean-cuisine-portland-3?osq=tangier" target="_blank"><img src="images/yelp.png" height="30px" alt="Yelp"></a>
 
     © 2020 Tangier
     </div>
