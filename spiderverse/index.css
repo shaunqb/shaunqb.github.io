@@ -2,7 +2,7 @@
 font-weight: 200;
 font-style: normal; */
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 
   h1 {
     font-family: "Kalam", cursive;
@@ -50,7 +50,8 @@ font-style: normal; */
   .thumb {
     position: relative;
   }
-  
+
+/* Label CSS */
   .bottom-label {
     position: absolute;
     bottom: 20px;
@@ -98,7 +99,8 @@ font-style: normal; */
     max-width: 280px;
     font-weight: 700;
   }
-  
+
+/* Regular Container */
   .yellow-box {
     background-color: #FFFC80;
     border: 1px solid #000;
@@ -110,6 +112,7 @@ font-style: normal; */
     margin-right: auto;
   }
 
+/* Container for Titles */
   .yellow-titlebox {
     display: flex;
     justify-content: center;
@@ -122,7 +125,8 @@ font-style: normal; */
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+/* Container for Labels */
   .yellow-label-box {
     justify-content: center;
     background-color: #FFF200;
@@ -137,28 +141,30 @@ font-style: normal; */
     padding-bottom: 3px;
   }
 
-.container {
+  .container {
     display: flex;
     justify-content: space-around;
-}
+  }
 
-.center {
+/* Used to center content */
+  .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
     height: auto;
-}
+  }
 
-.logo {
+  .logo {
     display: block;
     width: 7%;
     height: auto;
     float: left;
-}
+  }
 
-.button {
+/* Navigation CSS */
+  .button {
     width: 100%;
     height: auto;
     margin-top: 20px;
-}
+  }
