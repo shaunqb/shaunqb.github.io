@@ -12,20 +12,19 @@
 </head>
 <body>
   <a href="index.html" alt="Home"><img src="images/tangierlogo.png" alt="Tangier Logo" class="logo"></a>
-  <br />
-  <nav class="container">
-    <div><a href="index.html" alt="Home" class="button">Home</a></div>
-    <div><a href="gallery.html" alt="Gallery" class="button">Gallery</a></div>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="menu1.html" alt="Menu" >Appetizers, Soups, Salads, Sandwiches, and Mezza</a>
-          <a href="menu2.html" alt="Menu2" >Calzones, Pizzas, and Kababs</a>
-          <a href="menu3.html" alt="Menu3" >Specialty and Traditional Moroccan Dishes</a>
-          <a href="menu4.html" alt="Menu4" >Specialty Drinks and Desserts</a>
-        </div>
-
-          <script>
+    <br />         
+    <nav class="container">
+      <div><a href="index.html" alt="Home" class="button">Home</a></div>
+      <div><a href="gallery.html" alt="Gallery" class="button">Gallery</a></div>
+      <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="menu1.html" alt="Menu" >Appetizers, Soups, Salads, Sandwiches, and Mezza</a>
+            <a href="menu2.html" alt="Menu2" >Calzones, Pizzas, and Kababs</a>
+            <a href="menu3.html" alt="Menu3" >Specialty and Traditional Moroccan Dishes</a>
+            <a href="menu4.html" alt="Menu4" >Specialty Drinks and Desserts</a>
+          </div>
+            <script>
                 /* When the user clicks on the button, 
                 toggle between hiding and showing the dropdown content */
                 function myFunction() {
@@ -45,8 +44,22 @@
                     }
                   }
                 }
-            </script>
-  </nav>
+                </script>
+    </nav>
+      <header class="nav">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="menu-mobile">
+          <a href="index.html" alt="Home" class="button">Home</a>
+          <a href="gallery.html" alt="Gallery" class="button">Gallery</a>
+          <a href="menu1.html" alt="Menu" class="button">Appetizers, Soups, Salads, Sandwiches, and Mezza</a>
+          <a href="menu2.html" alt="Menu2" class="button">Calzones, Pizzas, and Kababs</a>
+          <a href="menu3.html" alt="Menu3" class="button">Specialty and Traditional Moroccan Dishes</a>
+          <a href="menu4.html" alt="Menu4" class="button">Specialty Drinks and Desserts</a>
+        </div>
+        </header>  
+    <br />
   <br />
     <div class="content black-box">
         <p>ATTENTION!</p>
@@ -139,5 +152,8 @@
 
     © 2020 Tangier
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
