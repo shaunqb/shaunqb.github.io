@@ -1,6 +1,11 @@
+/* Font = Lato
+Weights: 400 & 700
+Italics: 0 (means regular) & 1 (italics) for 400 weight (did not select 700 weight, only using italics for regular weight)*/
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
   body {
     background-color: #7BC143;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   .logo {
